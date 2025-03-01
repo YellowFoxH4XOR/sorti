@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Todo List</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>My Tasks</h1>
+      <div class="header-actions">
+        <button id="addNewBtn" class="icon-button">
+          <span class="material-symbols-rounded">add</span>
+        </button>
+        <div class="theme-toggle">
+          <span class="material-symbols-rounded">dark_mode</span>
+        </div>
+      </div>
+    </header>
+    
+    <div class="input-panel" id="inputPanel">
+      <div class="input-container">
+        <div class="input-group">
+          <div class="floating-input">
+            <input type="text" id="taskName" placeholder=" " required>
+            <label for="taskName">Task name</label>
+          </div>
+          <div class="floating-input">
+            <textarea id="taskDetails" placeholder=" "></textarea>
+            <label for="taskDetails">Task details (optional)</label>
+          </div>
+          <div class="date-input">
+            <span class="material-symbols-rounded">schedule</span>
+            <input type="datetime-local" id="taskDueDate">
+          </div>
+        </div>
+        <div class="action-buttons">
+          <button id="cancelAdd" class="secondary-button">Cancel</button>
+          <button id="addTodo" class="primary-button">Add Task</button>
+        </div>
+      </div>
+    </div>
+    
+    <ul id="todoList"></ul>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html> 

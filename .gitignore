@@ -1,0 +1,15 @@
+# macOS
+.DS_Store
+
+# Build output
+dist/
+build/
+
+# Logs
+logs
+*.log
+
+# Chrome extension files
+*.crx
+*.pem
+*.zip
